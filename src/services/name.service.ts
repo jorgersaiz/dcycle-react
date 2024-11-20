@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Age, Gender, Nationality } from '../models/name.model';
 
 
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = 'http://localhost:3200/api';
 
 export const getGenderize = async (name: string): Promise<Gender> => {
   const response = await axios.get(`${BASE_URL}/genderize/${name}`);

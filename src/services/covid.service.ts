@@ -2,7 +2,7 @@ import axios from 'axios';
 import { CovidData, CovidResponse, DataInfo } from '../models/covid.model';
 import { removeNull } from '../helpers/remove-null.helper';
 
-const BASE_URL = 'http://localhost:8080/api/covid';
+const BASE_URL = 'http://localhost:3200/api/covid';
 
 export const getCovidHistorical = async (): Promise<CovidData[]> => {
   const response = await axios.get<CovidResponse>(`${BASE_URL}/historical`);
