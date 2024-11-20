@@ -1,0 +1,14 @@
+.flag {
+    width: 30px;
+    margin-right: 4px;
+}
+
+.first-row {
+    position: sticky;
+    top: 0;
+}
+
+.table-container {
+    overflow-y: scroll;
+    max-height: 600px;
+}
